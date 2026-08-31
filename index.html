@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zerna — E-commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .card-glass {
+      background: rgba(22, 27, 34, 0.85);
+      border: 1px solid #30363d;
+      backdrop-filter: blur(8px);
+    }
+    .btn-glow:hover {
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+
+  <!-- Header -->
+  <header class="border-b border-gray-800 bg-[#161b22]/90 sticky top-0 z-50 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-black font-mono shadow-md">
+          ZE
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <h1 class="text-lg font-bold tracking-tight text-white">Zerna</h1>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-cyan-950 text-cyan-400 border border-cyan-800 font-mono">v1.1.0</span>
+          </div>
+          <p class="text-xs text-gray-400">E-commerce</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-3">
+        <a href="https://github.com/deep5devlopers/zerna" target="_blank" class="px-3 py-1.5 text-xs font-medium rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-200 border border-gray-700 flex items-center space-x-1.5 transition">
+          <i class="bi bi-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://github.com/deep5devlopers/deep" target="_blank" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-cyan-500 hover:bg-cyan-400 text-black flex items-center space-x-1.5 transition">
+          <i class="bi bi-grid-fill"></i>
+          <span>Ecosystem</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Showcase Container -->
+  <main class="max-w-7xl mx-auto px-6 py-8 flex-1 w-full">
+    
+    <!-- Hero Banner -->
+    <div class="mb-8 p-6 rounded-2xl card-glass border border-gray-800 relative overflow-hidden">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-800/60 text-blue-400 text-xs mb-3 font-mono">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Active Component • WooCommerce, Razorpay, React, Node.js</span>
+        </div>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight mb-2">
+          Minimalist commerce with effortless management
+        </h2>
+        <p class="text-sm text-gray-400 leading-relaxed">
+          Interactive client-side showcase for <strong>Zerna</strong>. Built and maintained under the <strong>@deep5devlopers</strong> suite.
+        </p>
+      </div>
+    </div>
+
+    <!-- Live Interactive Playground -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <!-- Interactive Sandbox App (Col 1 & 2) -->
+      <div class="lg:col-span-2 card-glass p-6 rounded-2xl border border-gray-800">
+        <div class="flex items-center justify-between pb-4 mb-4 border-b border-gray-800">
+          <div class="flex items-center space-x-2">
+            <i class="bi bi-play-circle-fill text-cyan-400"></i>
+            <h3 class="text-sm font-bold text-white uppercase tracking-wider font-mono">Interactive Live Sandbox</h3>
+          </div>
+          <span id="liveStatus" class="text-xs px-2.5 py-1 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800 font-mono">
+            ● Ready
+          </span>
+        </div>
+
+        <!-- Custom Interactive Component Body -->
+        <div id="interactiveApp" class="min-h-[360px] flex flex-col justify-between">
+          <!-- Injected via specific project script -->
+        </div>
+      </div>
+
+      <!-- Telemetry & Specs (Col 3) -->
+      <div class="space-y-6">
+        
+        <!-- Architecture Card -->
+        <div class="card-glass p-5 rounded-2xl border border-gray-800">
+          <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 font-mono">Specifications</h4>
+          <div class="space-y-2.5 text-xs">
+            <div class="flex justify-between py-1.5 border-b border-gray-800/60">
+              <span class="text-gray-400">Component</span>
+              <span class="text-white font-mono font-semibold">Zerna</span>
+            </div>
+            <div class="flex justify-between py-1.5 border-b border-gray-800/60">
+              <span class="text-gray-400">Category</span>
+              <span class="text-cyan-400 font-medium">E-commerce</span>
+            </div>
+            <div class="flex justify-between py-1.5 border-b border-gray-800/60">
+              <span class="text-gray-400">Tech Stack</span>
+              <span class="text-gray-200 text-right">WooCommerce, Razorpay, React, Node.js</span>
+            </div>
+            <div class="flex justify-between py-1.5 border-b border-gray-800/60">
+              <span class="text-gray-400">Unit Tests</span>
+              <span class="text-emerald-400 font-mono font-bold">100% Passing</span>
+            </div>
+            <div class="flex justify-between py-1.5">
+              <span class="text-gray-400">Maintained By</span>
+              <span class="text-white font-mono">@deep5devlopers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Card -->
+        <div class="card-glass p-5 rounded-2xl border border-gray-800 text-center">
+          <i class="bi bi-box-seam text-2xl text-cyan-400 mb-2 inline-block"></i>
+          <h5 class="text-sm font-bold text-white mb-1">Open Source Ecosystem</h5>
+          <p class="text-xs text-gray-400 mb-4">Explore the central repository with automated continuous sync.</p>
+          <a href="https://github.com/deep5devlopers/deep" target="_blank" class="w-full py-2 px-4 rounded-xl bg-gray-800 hover:bg-gray-700 text-white text-xs font-semibold border border-gray-700 inline-flex items-center justify-center space-x-2 transition">
+            <span>View Full Ecosystem</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800/60 bg-[#161b22]/50 py-4 px-6 text-center text-xs text-gray-500 font-mono">
+    &copy; 2026 Zerna • Part of the <a href="https://github.com/deep5devlopers" class="text-gray-400 hover:underline">@deep5devlopers</a> organization.
+  </footer>
+
+  <!-- Project-Specific Interactive Scripts -->
+  <script>
+
+    const container = document.getElementById('interactiveApp');
+    container.innerHTML = `
+      <div class="space-y-4 text-xs font-mono">
+        <div class="grid grid-cols-3 gap-3">
+          <div class="bg-black/30 p-3 rounded-xl border border-gray-800 text-center">
+            <div class="text-2xl mb-1">☕</div>
+            <div class="font-bold text-white">Arabica Roast</div>
+            <div class="text-cyan-400 mb-2">$18.00</div>
+            <button onclick="addToCart('Arabica Roast', 18)" class="w-full py-1 bg-cyan-600 hover:bg-cyan-500 rounded text-white font-bold">Add</button>
+          </div>
+          <div class="bg-black/30 p-3 rounded-xl border border-gray-800 text-center">
+            <div class="text-2xl mb-1">🍵</div>
+            <div class="font-bold text-white">Matcha Ceremonial</div>
+            <div class="text-cyan-400 mb-2">$24.00</div>
+            <button onclick="addToCart('Matcha Ceremonial', 24)" class="w-full py-1 bg-cyan-600 hover:bg-cyan-500 rounded text-white font-bold">Add</button>
+          </div>
+          <div class="bg-black/30 p-3 rounded-xl border border-gray-800 text-center">
+            <div class="text-2xl mb-1">🍫</div>
+            <div class="font-bold text-white">Dark Cocoa 85%</div>
+            <div class="text-cyan-400 mb-2">$12.00</div>
+            <button onclick="addToCart('Dark Cocoa 85%', 12)" class="w-full py-1 bg-cyan-600 hover:bg-cyan-500 rounded text-white font-bold">Add</button>
+          </div>
+        </div>
+
+        <div class="bg-black/40 p-3 rounded-xl border border-gray-800 flex items-center justify-between">
+          <div>
+            <span class="text-gray-400">CART TOTAL:</span>
+            <strong id="cartTotal" class="text-emerald-400 text-sm ml-2">$0.00</strong>
+            <span id="cartItems" class="text-gray-500 ml-2">(0 items)</span>
+          </div>
+          <button onclick="simulateRazorpayCheckout()" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-lg transition">
+            💳 1-Click Razorpay Checkout
+          </button>
+        </div>
+        <div id="checkoutLog" class="p-2 rounded bg-black/60 text-gray-400 text-[11px] h-14 overflow-auto border border-gray-800">
+          Ready for order placement.
+        </div>
+      </div>
+    `;
+
+    let total = 0, count = 0;
+    window.addToCart = function(item, price) {
+      total += price;
+      count += 1;
+      document.getElementById('cartTotal').textContent = '$' + total.toFixed(2);
+      document.getElementById('cartItems').textContent = `(${count} items)`;
+      log(`Added ${item} (+$${price.toFixed(2)})`);
+    };
+    window.simulateRazorpayCheckout = function() {
+      if (total === 0) { log('Cart is empty. Add items first.'); return; }
+      log(`Opening Razorpay Modal for $${total.toFixed(2)}...`);
+      setTimeout(() => {
+        log(`✅ Payment SUCCESS! Order #ORD-${Math.floor(Math.random()*90000+10000)} generated.`);
+        total = 0; count = 0;
+        document.getElementById('cartTotal').textContent = '$0.00';
+        document.getElementById('cartItems').textContent = '(0 items)';
+      }, 1200);
+    };
+    function log(msg) {
+      const box = document.getElementById('checkoutLog');
+      box.innerHTML = `> ${msg}<br/>` + box.innerHTML;
+    }
+
+  </script>
+</body>
+</html>
